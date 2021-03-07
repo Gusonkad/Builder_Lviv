@@ -1,0 +1,409 @@
+/*======================================
+[ CSS Table of contents ]
+* Header CSS
+* Slider CSS
+* About CSS
+* Work steps CSS
+* Portfolio CSS
+* Testimonials CSS
+* Contacts CSS
+* Footer CSS
+========================================*/
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+}
+
+.main-conteiner {
+   margin: 0 auto;
+   max-width: 1440px;
+   min-width: 320px;
+   position: relative;
+   background: #ffffff;
+}
+.main-conteiner h3 {
+   font-family: Playfair Display;
+   font-style: normal;
+   font-weight: normal;
+}
+.main-conteiner a {
+   text-decoration: none;
+}
+.main-conteiner li {
+   list-style-type: none;
+}
+/*header styles*/
+.header {
+   position: relative;
+   width: 100%;
+   z-index: 99;
+}
+.contacts-header {
+   position: absolute;
+   width: 100%;
+   height: 54px;
+   left: 0px;
+   top: 0px;
+   background: rgba(0, 0, 0, 0.31);
+}
+.phone1 {
+   position: absolute;
+   width: 139px;
+   height: 38px;
+   left: 818px;
+   top: 16px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: -0.015em;
+   color: #ffffff;
+}
+.phone2 {
+   position: absolute;
+   width: 139px;
+   height: 38px;
+   left: 1004px;
+   top: 16px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: -0.015em;
+   color: #ffffff;
+}
+.phone1:hover {
+   color: #ff9900;
+}
+.phone2:hover {
+   color: #ff9900;
+}
+.social ul li {
+   position: absolute;
+   width: 19px;
+   height: 19px;
+   top: 22px;
+}
+.social-linkedin {
+   left: 1248px;
+}
+.social-facebook {
+   left: 1289.29px;
+}
+.social-instagram {
+   left: 1330.59px;
+}
+
+/* logo */
+.logo a {
+   text-transform: uppercase;
+   position: absolute;
+   width: 73px;
+   height: 80px;
+   left: 80px;
+   top: 55px;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 80px;
+   /* identical to box height, or 333% */
+   letter-spacing: 7%;
+   color: #ff9900;
+}
+.button {
+   position: absolute;
+   width: 166px;
+   height: 37px;
+   left: 1194px;
+   top: 77px;
+   border: 2px solid #ff9900;
+   box-sizing: border-box;
+   background-image: none;
+   background: transparent;
+   background-color: transparent;
+   align-items: center;
+   text-align: center;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 35px;
+   display: inline-block;
+   color: #ff9900;
+   letter-spacing: -0.015em;
+}
+.button:hover {
+   color: #333;
+   background: #fff;
+}
+.mainheader a {
+   position: absolute;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 80px;
+   /* identical to box height, or 444% */
+   letter-spacing: 0.07em;
+   color: #ffffff;
+}
+.header-about {
+   width: 72px;
+   height: 50px;
+   left: 328px;
+   top: 55px;
+   border-bottom: 3px solid transparent;
+   text-align: center;
+}
+.header-testimonials {
+   width: 70px;
+   height: 50px;
+   left: 486px;
+   top: 55px;
+   border-bottom: 3px solid transparent;
+   text-align: center;
+}
+.header-steps {
+   width: 42px;
+   height: 50px;
+   left: 641px;
+   top: 55px;
+   border-bottom: 3px solid transparent;
+   text-align: center;
+}
+.header-portfolio {
+   width: 122px;
+   height: 50px;
+   left: 739px;
+   top: 55px;
+   border-bottom: 3px solid transparent;
+   text-align: center;
+}
+.header-contacts {
+   width: 86px;
+   height: 50px;
+   left: 924px;
+   top: 55px;
+   border-bottom: 3px solid transparent;
+   text-align: center;
+}
+.mainheader a:hover {
+   color: #ff9900;
+   border-bottom: 3px solid #ff9900;
+}
+.active {
+   color: #ff9900;
+   border-bottom: 3px solid #ff9900;
+}
+
+/* Slider */
+.slider {
+   position: absolute;
+   content: "";
+   width: 1440px;
+   height: 1006px;
+   left: 0px;
+   top: 0px;
+   background-size: cover;
+   background-position: center;
+   z-index: 2;
+}
+.slider-container h3 {
+   position: absolute;
+   width: 860px;
+   height: 112px;
+   left: 335px;
+   top: 271px;
+   font-size: 40px;
+   line-height: 139.4%;
+   /* or 56px */
+   letter-spacing: 0.2px;
+   color: #ffffff;
+}
+.slider-container p {
+   position: absolute;
+   width: 776px;
+   height: 75px;
+   left: 335px;
+   top: 412px;
+   font-size: 18px;
+   line-height: 139.4%;
+   /* or 25px */
+   letter-spacing: 0.2px;
+   color: #ffffff;
+}
+.button2 {
+   position: absolute;
+   width: 166px;
+   height: 43px;
+   left: 337px;
+   top: 547px;
+   border: 2px solid #ff9900;
+   box-sizing: border-box;
+   background-color: #ff9900;
+   align-items: center;
+   text-align: center;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 35px;
+   display: inline-block;
+   letter-spacing: -0.015em;
+   color: #ffffff;
+}
+.button2:hover {
+   color: #333;
+   background: #fff;
+}
+/* Slider bottom line */
+.slider-bottom {
+   position: absolute;
+   width: 1440px;
+   height: 169px;
+   left: 0px;
+   top: 838px;
+   background: rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(26px);
+   z-index: 2;
+}
+.slider-bottom p {
+   position: absolute;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 139.4%;
+   display: block;
+   /* or 28px */
+   letter-spacing: 0.2px;
+   color: #ffffff;
+   z-index: 4;
+}
+.slider-bottom p.bottom1 {
+   width: 156px;
+   left: 80px;
+   top: 52px;
+}
+.bottom-fon1 {
+   position: absolute;
+   width: 92px;
+   height: 92px;
+   left: 150px;
+   vertical-align: middle;
+   margin-top: 35px;
+   opacity: 0.51;
+   z-index: 90;
+}
+.slider-bottom p.bottom2 {
+   width: 190px;
+   left: 333px;
+   top: 56px;
+}
+.bottom-fon2 {
+   position: absolute;
+   width: 92px;
+   height: 41px;
+   left: 431px;
+   vertical-align: middle;
+   margin-top: 35px;
+   opacity: 0.51;
+   z-index: 90;
+}
+.slider-bottom p.bottom3 {
+   width: 180px;
+   left: 611px;
+   top: 38px;
+}
+.bottom-fon3 {
+   position: absolute;
+   width: 92px;
+   height: 92px;
+   left: 736px;
+   vertical-align: middle;
+   margin-top: 35px;
+   opacity: 0.51;
+   z-index: 90;
+}
+.slider-bottom p.bottom4 {
+   width: 158px;
+   left: 921px;
+   top: 38px;
+}
+.bottom-fon4 {
+   position: absolute;
+   width: 92px;
+   height: 92px;
+   left: 1014px;
+   vertical-align: middle;
+   margin-top: 35px;
+   opacity: 0.51;
+   z-index: 90;
+}
+.slider-bottom p.bottom5 {
+   width: 170px;
+   left: 1199px;
+   top: 38px;
+}
+.bottom-fon5 {
+   position: absolute;
+   width: 92px;
+   height: 92px;
+   left: 1268px;
+   vertical-align: middle;
+   margin-top: 35px;
+   opacity: 0.51;
+   z-index: 90;
+}
+/* About */
+.about {
+   position: absolute;
+   width: 547px;
+   height: 766px;
+   left: 0px;
+   top: 1007px;
+}
+.banner-about {
+   position: absolute;
+   width: 238px;
+   height: 220px;
+   right: 1px;
+   top: 546px;
+   background: #ffb800;
+   mix-blend-mode: normal;
+}
+.banner-about p {
+   position: absolute;
+   left: 34px;
+   top: 84px;
+   width: 110px;
+   height: 98px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 30px;
+   line-height: 139.4%;
+   /* or 42px */
+   letter-spacing: 0.2px;
+   color: #ffffff;
+}
+.banner-about span {
+   position: absolute;
+   left: 34px;
+   top: 12px;
+   width: 110px;
+   height: 98px;
+   font-family: Playfair Display;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 70px;
+   line-height: 139.4%;
+   /* identical to box height, or 98px */
+   letter-spacing: 0.2px;
+   color: #ffffff;
+}
+.about-info {
+}
