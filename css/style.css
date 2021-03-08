@@ -9,21 +9,27 @@
 * Contacts CSS
 * Footer CSS
 ========================================*/
-body {
-   margin: 0;
+* {
    padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   position: relative;
    font-family: Gilroy;
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
 }
 
-.main-conteiner {
+#main {
    margin: 0 auto;
    max-width: 1440px;
    min-width: 320px;
    position: relative;
+   display: flex;
    background: #ffffff;
+   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 .main-conteiner h3 {
    font-family: Playfair Display;
@@ -38,13 +44,15 @@ body {
 }
 /*header styles*/
 .header {
+   display: flex;
    position: relative;
-   width: 100%;
+   max-width: 1440px;
    z-index: 99;
 }
 .contacts-header {
-   position: absolute;
-   width: 100%;
+   display: block;
+   position: relative;
+   width: 1440px;
    height: 54px;
    left: 0px;
    top: 0px;
@@ -55,7 +63,7 @@ body {
    width: 139px;
    height: 38px;
    left: 818px;
-   top: 16px;
+   top: 7px;
    font-weight: 500;
    font-size: 16px;
    line-height: 19px;
@@ -70,7 +78,7 @@ body {
    width: 139px;
    height: 38px;
    left: 1004px;
-   top: 16px;
+   top: 7px;
    font-weight: 500;
    font-size: 16px;
    line-height: 19px;
@@ -120,7 +128,7 @@ body {
 .button {
    position: absolute;
    width: 166px;
-   height: 37px;
+   height: 42px;
    left: 1194px;
    top: 77px;
    border: 2px solid #ff9900;
@@ -203,6 +211,7 @@ body {
 
 /* Slider */
 .slider {
+   display: flex;
    position: absolute;
    content: "";
    width: 1440px;
@@ -365,8 +374,18 @@ body {
    height: 766px;
    left: 0px;
    top: 1007px;
+   z-index: 99;
+}
+.about-container {
+   display: flex;
+   content: "";
+   width: 1440px;
+   height: 767px;
+
+   z-index: 1;
 }
 .banner-about {
+   display: block;
    position: absolute;
    width: 238px;
    height: 220px;
@@ -378,12 +397,12 @@ body {
 .banner-about p {
    position: absolute;
    left: 34px;
-   top: 84px;
+   top: 100px;
    width: 110px;
-   height: 98px;
+   height: 78px;
    font-family: Gilroy;
    font-style: normal;
-   font-weight: normal;
+   font-weight: 400;
    font-size: 30px;
    line-height: 139.4%;
    /* or 42px */
@@ -398,12 +417,99 @@ body {
    height: 98px;
    font-family: Playfair Display;
    font-style: normal;
-   font-weight: normal;
+   font-weight: 400;
    font-size: 70px;
    line-height: 139.4%;
    /* identical to box height, or 98px */
    letter-spacing: 0.2px;
    color: #ffffff;
 }
+/* About right block*/
+
 .about-info {
+   display: block;
+}
+.about-info i {
+   position: absolute;
+   width: 692px;
+   height: 606px;
+   left: 783px;
+   top: 377px;
+}
+.about-info span {
+   position: absolute;
+   width: 150px;
+   height: 25px;
+   left: 731px;
+   top: 158px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 139.4%;
+   /* identical to box height, or 25px */
+   letter-spacing: 9.7px;
+   text-transform: uppercase;
+   color: #ff9900;
+}
+.about-info h3 {
+   position: absolute;
+   width: 240px;
+   height: 56px;
+   left: 731px;
+   top: 198px;
+   font-family: Playfair Display;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 40px;
+   line-height: 139.4%;
+   /* identical to box height, or 56px */
+   letter-spacing: 0.2px;
+   color: #000000;
+}
+.about-info a {
+   position: absolute;
+   width: 532px;
+   height: 300px;
+   left: 732px;
+   top: 280px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 139.4%;
+   /* or 25px */
+   letter-spacing: 0.2px;
+   color: #7c7c7c;
+}
+.about-info p.about-rubric {
+   margin-top: 20px;
+}
+
+/* Work steps */
+.work-steps-container {
+   position: absolute;
+   display: block;
+   width: 1440px;
+   height: 531px;
+   left: 0px;
+   top: 1773px;
+   background: #000000;
+   mix-blend-mode: normal;
+}
+.steps-title p {
+   position: absolute;
+   width: 267px;
+   height: 25px;
+   left: 169px;
+   top: 65px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 139.4%;
+   /* identical to box height, or 25px */
+   letter-spacing: 9.7px;
+   text-transform: uppercase;
+   color: #ff9900;
 }
