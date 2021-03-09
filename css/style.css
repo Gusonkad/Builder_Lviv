@@ -49,13 +49,13 @@ body {
    z-index: 99;
 }
 .contacts-header {
+   position: fixed;
+   align-items: center;
    display: block;
-   position: relative;
    width: 1440px;
    height: 54px;
-   left: 0px;
-   top: 0px;
    background: rgba(0, 0, 0, 0.31);
+   z-index: 9999;
 }
 .phone1 {
    position: absolute;
@@ -148,8 +148,9 @@ body {
    color: #333;
    background: #fff;
 }
-.mainheader a {
+#top_nav a {
    position: absolute;
+   margin-left: 50px;
    font-family: Gilroy;
    font-style: normal;
    font-weight: normal;
@@ -373,7 +374,7 @@ body {
    height: 766px;
    left: 0px;
    top: 1007px;
-   z-index: 99;
+   z-index: 9;
 }
 .about-container {
    display: flex;
@@ -497,7 +498,7 @@ body {
    top: 1773px;
    background: #000;
    mix-blend-mode: normal;
-   z-index: 99;
+   z-index: 9;
 }
 .steps-title p {
    position: absolute;
@@ -1017,4 +1018,256 @@ body {
    left: 1039px;
    top: 285px;
    border: 1px solid #ffffff;
+}
+
+/* Portfolio*/
+#portfolio {
+   position: absolute;
+   display: block;
+   width: 1440px;
+   height: 911px;
+   left: 0px;
+   top: 2300px;
+   background-color: #ffffff;
+   background-size: cover;
+   background-position: center;
+   z-index: 2;
+}
+.portfolio-title p {
+   position: absolute;
+   left: 628px;
+   top: 100px;
+   width: 183px;
+   height: 25px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 139.4%;
+   /* identical to box height, or 25px */
+   text-align: center;
+   letter-spacing: 9.7px;
+   text-transform: uppercase;
+   color: #ff9900;
+}
+.portfolio-title h3 {
+   position: absolute;
+   left: 566px;
+   top: 120px;
+   width: 310px;
+   height: 70px;
+   font-family: Playfair Display;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 40px;
+   line-height: 139.4%;
+   /* or 56px */
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #000000;
+}
+.portfolio-info i {
+   position: absolute;
+   width: 692px;
+   height: 606px;
+   left: 282px;
+   top: 376px;
+   mix-blend-mode: multiply;
+   opacity: 0.3;
+}
+.portfolio-info h5 {
+   position: absolute;
+   width: 173px;
+   height: 33px;
+   left: 172px;
+   top: 355px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 139.4%;
+   /* or 33px */
+   letter-spacing: 0.2px;
+   color: #000000;
+}
+.portfolio-info p {
+   position: absolute;
+   width: 504px;
+   height: 175px;
+   left: 168px;
+   top: 412px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 139.4%;
+   /* or 25px */
+   letter-spacing: 0.2px;
+   color: #000000;
+}
+.portfolio-info span {
+   position: absolute;
+   width: 142px;
+   height: 25px;
+   left: 168px;
+   top: 618px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 139.4%;
+   /* identical to box height, or 25px */
+   letter-spacing: 0.2px;
+   color: #000000;
+}
+.portfolio-info span i {
+   position: absolute;
+   width: 68px;
+   height: 28px;
+   left: 150px;
+   top: 0px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 139.4%;
+   /* identical to box height, or 28px */
+   letter-spacing: 0.2px;
+   color: #000000;
+}
+.portfolio-info span.portf-botom {
+   position: absolute;
+   width: 142px;
+   height: 25px;
+   left: 168px;
+   top: 655px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 139.4%;
+   /* identical to box height, or 25px */
+   letter-spacing: 0.2px;
+   color: #000000;
+}
+.portfolio-info span.portf-botom i {
+   position: absolute;
+   width: 68px;
+   height: 28px;
+   left: 150px;
+   top: 0px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 139.4%;
+   /* identical to box height, or 28px */
+   letter-spacing: 0.2px;
+   color: #000000;
+}
+/* Porfolio-slider */
+.porfolio-slider {
+   position: relative;
+   width: 652px;
+   height: 684px;
+   left: 795px;
+   top: 229px;
+}
+.porfolio-slider-foto1 {
+   position: absolute;
+   width: 102px;
+   height: 105px;
+   left: 0px;
+   top: 0px;
+}
+.porfolio-slider-foto2 {
+   position: absolute;
+   width: 102px;
+   height: 105px;
+   left: 0px;
+   top: 107px;
+}
+.porfolio-slider-foto3 {
+   position: absolute;
+   width: 102px;
+   height: 105px;
+   left: 0px;
+   top: 214px;
+}
+.porfolio-slider-foto-main {
+   position: absolute;
+   width: 845px;
+   height: 607px;
+   left: 104px;
+   top: 0px;
+}
+.porfolio-slider-panel {
+   position: absolute;
+   display: inline;
+   width: 541px;
+   height: 94px;
+   left: 899px;
+   top: 817px;
+   background: #ffb800;
+}
+.portfolio-dot1 i {
+   position: relative;
+   font-size: 12px;
+   left: 119px;
+   top: 35px;
+   color: #ffffff;
+}
+.portfolio-dot2 i {
+   position: relative;
+   font-size: 9px;
+   left: 158px;
+   top: 33px;
+   color: rgba(255, 255, 255, 0.35);
+}
+.portfolio-dot3 i {
+   position: relative;
+   font-size: 9px;
+   left: 197px;
+   top: 33px;
+   color: rgba(255, 255, 255, 0.35);
+}
+.portfolio-dot4 i {
+   position: relative;
+   font-size: 9px;
+   left: 236px;
+   top: 33px;
+   color: rgba(255, 255, 255, 0.35);
+}
+.portfolio-chevron-left i {
+   position: absolute;
+   font-size: 32px;
+   left: 390px;
+   top: 30px;
+   color: #ffffff;
+}
+.portfolio-chevron-right i {
+   position: absolute;
+   font-size: 32px;
+   left: 450px;
+   top: 30px;
+   color: #ffffff;
+}
+
+/* Testimonials */
+#testimonials {
+   position: relative;
+   width: 1440px;
+   height: 804px;
+   left: 0px;
+   top: 3210px;
+}
+.testimonials-container {
+   position: absolute;
+   width: 766px;
+   height: 671px;
+   left: 345px;
+   top: 0px;
+
+   background: rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(26px);
 }
