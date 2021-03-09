@@ -19,6 +19,9 @@ body {
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
+   max-width: 100%;
+   overflow-x: hidden;
+   display: flex;
 }
 
 #main {
@@ -28,7 +31,6 @@ body {
    position: relative;
    display: flex;
    background: #ffffff;
-   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 .main-conteiner h3 {
    font-family: Playfair Display;
@@ -102,11 +104,20 @@ body {
 .social-linkedin {
    left: 1248px;
 }
+.social-linkedin a:hover {
+   border-bottom: 3px solid #ff9900;
+}
 .social-facebook {
    left: 1289.29px;
 }
+.social-facebook a:hover {
+   border-bottom: 3px solid #ff9900;
+}
 .social-instagram {
    left: 1330.59px;
+}
+.social-instagram a:hover {
+   border-bottom: 3px solid #ff9900;
 }
 
 /* logo */
@@ -148,7 +159,7 @@ body {
    color: #333;
    background: #fff;
 }
-#top_nav a {
+.mainheader a {
    position: absolute;
    margin-left: 50px;
    font-family: Gilroy;
@@ -200,11 +211,11 @@ body {
    border-bottom: 3px solid transparent;
    text-align: center;
 }
-.mainheader a:hover {
+.mainheader li a:hover {
    color: #ff9900;
    border-bottom: 3px solid #ff9900;
 }
-.active {
+.mainheader li a:active {
    color: #ff9900;
    border-bottom: 3px solid #ff9900;
 }
