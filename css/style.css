@@ -9,119 +9,144 @@
 * Contacts CSS
 * Footer CSS
 ========================================*/
+@font-face {
+   font-family: "Gilroy";
+   src: local("Gilroy Light"), local("Gilroy-Light"), url("Gilroylight.woff2") format("woff2"),
+      url("Gilroylight.woff") format("woff"), url("Gilroylight.ttf") format("truetype");
+   font-weight: 300;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Gilroy";
+   src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("Gilroyextrabold.woff2") format("woff2"),
+      url("Gilroyextrabold.woff") format("woff"), url("Gilroyextrabold.ttf") format("truetype");
+   font-weight: 800;
+   font-style: normal;
+}
+
 * {
    padding: 0;
    margin: 0;
 }
 body {
-   position: relative;
-   font-family: Gilroy;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 18px;
-   max-width: 100%;
-   overflow-x: hidden;
    display: flex;
+   position: relative;
+   overflow-x: hidden;
 }
 
-#main {
+.main_conteiner {
    margin: 0 auto;
    max-width: 1440px;
    min-width: 320px;
    position: relative;
    display: flex;
+   justify-content: center;
    background: #ffffff;
 }
-.main-conteiner h3 {
-   font-family: Playfair Display;
-   font-style: normal;
-   font-weight: normal;
-}
-.main-conteiner a {
+
+.main_conteiner a {
    text-decoration: none;
 }
-.main-conteiner li {
+.main_conteiner li {
    list-style-type: none;
 }
 /*header styles*/
 .header {
    display: flex;
    position: relative;
-   max-width: 1440px;
+   justify-content: center;
    z-index: 99;
+   text-decoration: none;
 }
-.contacts-header {
-   position: fixed;
-   align-items: center;
-   display: block;
+.header_contacts {
    width: 1440px;
+   position: relative;
+   justify-content: center;
    height: 54px;
    background: rgba(0, 0, 0, 0.31);
-   z-index: 9999;
+   z-index: 99;
 }
-.phone1 {
+.header_contacts__goback {
+   position: absolute;
+   display: block;
+   left: 80px;
+   top: 17px;
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 26px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: -0.015em;
+   opacity: 0;
+   color: #ffffff;
+}
+.header_contacts__goback:hover {
+   opacity: 1;
+   color: #ff9900;
+}
+.header_contacts__goback i {
+   padding-right: 5px;
+}
+.header_contacts__phone1 {
    position: absolute;
    width: 139px;
    height: 38px;
    left: 818px;
-   top: 7px;
+   top: 20px;
    font-weight: 500;
    font-size: 16px;
    line-height: 19px;
-   display: flex;
    align-items: center;
    text-align: center;
    letter-spacing: -0.015em;
    color: #ffffff;
 }
-.phone2 {
+.header_contacts__phone2 {
    position: absolute;
    width: 139px;
    height: 38px;
    left: 1004px;
-   top: 7px;
+   top: 20px;
    font-weight: 500;
    font-size: 16px;
    line-height: 19px;
-   display: flex;
    align-items: center;
    text-align: center;
-   letter-spacing: -0.015em;
    color: #ffffff;
 }
-.phone1:hover {
+.header_contacts__phone1:hover {
    color: #ff9900;
 }
-.phone2:hover {
+.header_contacts__phone2:hover {
    color: #ff9900;
 }
-.social ul li {
+.header_social ul li {
    position: absolute;
    width: 19px;
    height: 19px;
    top: 22px;
 }
-.social-linkedin {
+.header_social__linkedin {
    left: 1248px;
 }
-.social-linkedin a:hover {
+.header_social__linkedin a:hover {
    border-bottom: 3px solid #ff9900;
 }
-.social-facebook {
+.header_social__facebook {
    left: 1289.29px;
 }
-.social-facebook a:hover {
+.header_social__facebook a:hover {
    border-bottom: 3px solid #ff9900;
 }
-.social-instagram {
+.header_social__instagram {
    left: 1330.59px;
 }
-.social-instagram a:hover {
+.header_social__instagram a:hover {
    border-bottom: 3px solid #ff9900;
 }
-
 /* logo */
-.logo a {
+.header_logo a {
    text-transform: uppercase;
    position: absolute;
    width: 73px;
@@ -135,7 +160,7 @@ body {
    letter-spacing: 7%;
    color: #ff9900;
 }
-.button {
+.header_button {
    position: absolute;
    width: 166px;
    height: 42px;
@@ -155,14 +180,14 @@ body {
    color: #ff9900;
    letter-spacing: -0.015em;
 }
-.button:hover {
+.header_button:hover {
    color: #333;
    background: #fff;
 }
-.mainheader a {
+.header_nav li a {
    position: absolute;
    margin-left: 50px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
@@ -171,7 +196,9 @@ body {
    letter-spacing: 0.07em;
    color: #ffffff;
 }
-.header-about {
+.header_nav__about {
+   display: flex;
+   position: absolute;
    width: 72px;
    height: 50px;
    left: 328px;
@@ -179,7 +206,7 @@ body {
    border-bottom: 3px solid transparent;
    text-align: center;
 }
-.header-testimonials {
+.header_nav__testimonials {
    width: 70px;
    height: 50px;
    left: 486px;
@@ -187,7 +214,7 @@ body {
    border-bottom: 3px solid transparent;
    text-align: center;
 }
-.header-steps {
+.header_nav__steps {
    width: 42px;
    height: 50px;
    left: 641px;
@@ -195,7 +222,7 @@ body {
    border-bottom: 3px solid transparent;
    text-align: center;
 }
-.header-portfolio {
+.header_nav__portfolio {
    width: 122px;
    height: 50px;
    left: 739px;
@@ -203,7 +230,7 @@ body {
    border-bottom: 3px solid transparent;
    text-align: center;
 }
-.header-contacts {
+.header_nav__contacts {
    width: 86px;
    height: 50px;
    left: 924px;
@@ -211,11 +238,11 @@ body {
    border-bottom: 3px solid transparent;
    text-align: center;
 }
-.mainheader li a:hover {
+.header_nav li a:hover {
    color: #ff9900;
    border-bottom: 3px solid #ff9900;
 }
-.mainheader li a:active {
+.header_nav li a:active {
    color: #ff9900;
    border-bottom: 3px solid #ff9900;
 }
@@ -233,7 +260,7 @@ body {
    background-position: center;
    z-index: 2;
 }
-.slider-container h3 {
+.slider_container__head1 {
    position: absolute;
    width: 860px;
    height: 112px;
@@ -245,7 +272,7 @@ body {
    letter-spacing: 0.2px;
    color: #ffffff;
 }
-.slider-container p {
+.slider_container__head2 {
    position: absolute;
    width: 776px;
    height: 75px;
@@ -257,7 +284,7 @@ body {
    letter-spacing: 0.2px;
    color: #ffffff;
 }
-.button2 {
+.slider_container__button2 {
    position: absolute;
    width: 166px;
    height: 43px;
@@ -275,12 +302,12 @@ body {
    letter-spacing: -0.015em;
    color: #ffffff;
 }
-.button2:hover {
+.slider_container__button2:hover {
    color: #333;
    background: #fff;
 }
 /* Slider bottom line */
-.slider-bottom {
+.slider_bottom {
    position: absolute;
    width: 1440px;
    height: 169px;
@@ -290,25 +317,25 @@ body {
    backdrop-filter: blur(26px);
    z-index: 1;
 }
-.slider-bottom p {
+.slider_bottom p {
    position: absolute;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: 600;
    font-size: 20px;
    line-height: 139.4%;
-   display: block;
+   display: inline;
    /* or 28px */
    letter-spacing: 0.2px;
    color: #ffffff;
    z-index: 99;
 }
-.slider-bottom p.bottom1 {
+.slider_bottom p.bottom1 {
    width: 156px;
    left: 80px;
    top: 52px;
 }
-.bottom-fon1 {
+.bottom_fon1 {
    position: absolute;
    width: 92px;
    height: 92px;
@@ -318,12 +345,12 @@ body {
    opacity: 0.51;
    z-index: 90;
 }
-.slider-bottom p.bottom2 {
+.slider_bottom p.bottom2 {
    width: 190px;
    left: 333px;
    top: 56px;
 }
-.bottom-fon2 {
+.bottom_fon2 {
    position: absolute;
    width: 92px;
    height: 41px;
@@ -333,12 +360,12 @@ body {
    opacity: 0.51;
    z-index: 90;
 }
-.slider-bottom p.bottom3 {
+.slider_bottom p.bottom3 {
    width: 180px;
    left: 611px;
    top: 38px;
 }
-.bottom-fon3 {
+.bottom_fon3 {
    position: absolute;
    width: 92px;
    height: 92px;
@@ -348,12 +375,12 @@ body {
    opacity: 0.51;
    z-index: 90;
 }
-.slider-bottom p.bottom4 {
+.slider_bottom p.bottom4 {
    width: 158px;
    left: 921px;
    top: 38px;
 }
-.bottom-fon4 {
+.bottom_fon4 {
    position: absolute;
    width: 92px;
    height: 92px;
@@ -363,12 +390,12 @@ body {
    opacity: 0.51;
    z-index: 90;
 }
-.slider-bottom p.bottom5 {
+.slider_bottom p.bottom5 {
    width: 170px;
    left: 1199px;
    top: 38px;
 }
-.bottom-fon5 {
+.bottom_fon5 {
    position: absolute;
    width: 92px;
    height: 92px;
@@ -387,15 +414,14 @@ body {
    top: 1007px;
    z-index: 9;
 }
-.about-container {
+.about_container {
    display: flex;
    content: "";
    width: 1440px;
    height: 767px;
-
    z-index: 1;
 }
-.banner-about {
+.about_banner {
    display: block;
    position: absolute;
    width: 238px;
@@ -405,13 +431,13 @@ body {
    background: #ffb800;
    mix-blend-mode: normal;
 }
-.banner-about p {
+.about_banner__text1 {
    position: absolute;
    left: 34px;
    top: 100px;
    width: 110px;
    height: 78px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: 400;
    font-size: 30px;
@@ -420,13 +446,13 @@ body {
    letter-spacing: 0.2px;
    color: #ffffff;
 }
-.banner-about span {
+.about_banner__text2 {
    position: absolute;
    left: 34px;
    top: 12px;
    width: 110px;
    height: 98px;
-   font-family: Playfair Display;
+   font-family: "Playfair Display";
    font-style: normal;
    font-weight: 400;
    font-size: 70px;
@@ -437,10 +463,10 @@ body {
 }
 /* About right block*/
 
-.about-info {
+.about_info {
    display: block;
 }
-.about-info i {
+.about_img {
    position: absolute;
    width: 692px;
    height: 606px;
@@ -448,13 +474,13 @@ body {
    top: 377px;
    z-index: 1;
 }
-.about-info span {
+.about_info__head1 {
    position: absolute;
    width: 150px;
    height: 25px;
    left: 731px;
    top: 158px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
@@ -464,13 +490,13 @@ body {
    text-transform: uppercase;
    color: #ff9900;
 }
-.about-info h3 {
+.about_info__head2 {
    position: absolute;
    width: 240px;
    height: 56px;
    left: 731px;
    top: 198px;
-   font-family: Playfair Display;
+   font-family: "Playfair Display";
    font-style: normal;
    font-weight: normal;
    font-size: 40px;
@@ -480,13 +506,13 @@ body {
    color: #000000;
    z-index: 3;
 }
-.about-info a {
+.about_rubric {
    position: absolute;
    width: 532px;
    height: 300px;
    left: 732px;
    top: 280px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
@@ -495,12 +521,12 @@ body {
    letter-spacing: 0.2px;
    color: #7c7c7c;
 }
-.about-info p.about-rubric {
+.about_rubric__botom {
    margin-top: 20px;
 }
 
 /* Work steps */
-.work-steps {
+.work_steps {
    position: absolute;
    display: block;
    width: 1440px;
@@ -511,13 +537,13 @@ body {
    mix-blend-mode: normal;
    z-index: 9;
 }
-.steps-title p {
+.work_steps_container .title1 {
    position: absolute;
    width: 267px;
    height: 25px;
-   left: 169px;
+   left: 170px;
    top: 65px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
@@ -527,13 +553,13 @@ body {
    text-transform: uppercase;
    color: #ff9900;
 }
-.steps-title h3 {
+.work_steps_container .title2 {
    position: absolute;
    width: 350px;
    height: 56px;
    left: 167px;
    top: 98px;
-   font-family: Playfair Display;
+   font-family: "Playfair Display";
    font-style: normal;
    font-weight: normal;
    font-size: 40px;
@@ -545,7 +571,7 @@ body {
 
 /*Work steps circles*/
 /*First circle*/
-.steps-row1 span.dot {
+.steps_row1 span.dot {
    display: block;
    position: absolute;
    width: 66px;
@@ -558,7 +584,7 @@ body {
    text-align: center;
    transform: rotate(45deg);
 }
-.steps-row1 span.dot:before {
+.steps_row1 span.dot:before {
    content: "";
    position: absolute;
    top: -3px;
@@ -572,7 +598,7 @@ body {
    border-bottom: 3px solid transparent;
    border-right: 3px solid transparent;
 }
-.steps-row1 span.dot:after {
+.steps_row1 span.dot:after {
    content: "";
    position: absolute;
    top: -3px;
@@ -587,13 +613,13 @@ body {
    border-right: 3px solid transparent;
    transform: rotate(70deg);
 }
-.steps-row1 i {
+.steps_row1 i {
    position: absolute;
    width: 15px;
    height: 59px;
    left: 225px;
    top: 250px;
-   font-family: Playfair Display;
+   font-family: "Playfair Display";
    font-style: normal;
    font-weight: normal;
    font-size: 40px;
@@ -603,13 +629,13 @@ body {
    color: #ffffff;
    display: block;
 }
-.steps-row1 p {
+.steps_row1 p {
    position: absolute;
    width: 140px;
    height: 40px;
    left: 188px;
    top: 347px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
@@ -619,7 +645,7 @@ body {
    color: #ffffff;
 }
 /*Second circle*/
-.steps-row2 span.dot {
+.steps_row2 span.dot {
    display: block;
    position: absolute;
    width: 66px;
@@ -632,7 +658,7 @@ body {
    text-align: center;
    transform: rotate(45deg);
 }
-.steps-row2 span.dot:before {
+.steps_row2 span.dot:before {
    content: "";
    position: absolute;
    top: -3px;
@@ -646,7 +672,7 @@ body {
    border-bottom: 3px solid transparent;
    border-right: 3px solid transparent;
 }
-.steps-row2 span.dot:after {
+.steps_row2 span.dot:after {
    content: "";
    position: absolute;
    top: -3px;
@@ -661,13 +687,13 @@ body {
    border-right: 3px solid transparent;
    transform: rotate(30deg);
 }
-.steps-row2 i {
+.steps_row2 i {
    position: absolute;
    width: 15px;
    height: 59px;
    left: 416px;
    top: 251px;
-   font-family: Playfair Display;
+   font-family: "Playfair Display";
    font-style: normal;
    font-weight: normal;
    font-size: 40px;
@@ -677,13 +703,13 @@ body {
    color: #ffffff;
    display: block;
 }
-.steps-row2 p {
+.steps_row2 p {
    position: absolute;
    width: 140px;
    height: 40px;
    left: 391px;
    top: 347px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
@@ -693,7 +719,7 @@ body {
    color: #ffffff;
 }
 /*Third circle*/
-.steps-row3 span.dot {
+.steps_row3 span.dot {
    display: block;
    position: absolute;
    width: 66px;
@@ -706,7 +732,7 @@ body {
    text-align: center;
    transform: rotate(45deg);
 }
-.steps-row3 span.dot:before {
+.steps_row3 span.dot:before {
    content: "";
    position: absolute;
    top: -3px;
@@ -720,7 +746,7 @@ body {
    border-bottom: 3px solid transparent;
    border-right: 3px solid transparent;
 }
-.steps-row3 span.dot:after {
+.steps_row3 span.dot:after {
    content: "";
    position: absolute;
    top: -3px;
@@ -735,13 +761,13 @@ body {
    border-right: 3px solid transparent;
    transform: rotate(90deg);
 }
-.steps-row3 i {
+.steps_row3 i {
    position: absolute;
    width: 15px;
    height: 59px;
    left: 612px;
    top: 251px;
-   font-family: Playfair Display;
+   font-family: "Playfair Display";
    font-style: normal;
    font-weight: normal;
    font-size: 40px;
@@ -751,13 +777,13 @@ body {
    color: #ffffff;
    display: block;
 }
-.steps-row3 p {
+.steps_row3 p {
    position: absolute;
    width: 140px;
    height: 40px;
    left: 587px;
    top: 347px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
@@ -767,7 +793,7 @@ body {
    color: #ffffff;
 }
 /*Fourth  circle*/
-.steps-row4 span.dot {
+.steps_row4 span.dot {
    display: block;
    position: absolute;
    width: 66px;
@@ -780,7 +806,7 @@ body {
    text-align: center;
    transform: rotate(45deg);
 }
-.steps-row4 span.dot:before {
+.steps_row4 span.dot:before {
    content: "";
    position: absolute;
    top: -3px;
@@ -794,7 +820,7 @@ body {
    border-bottom: 3px solid transparent;
    border-right: 3px solid #ff9900;
 }
-.steps-row4 span.dot:after {
+.steps_row4 span.dot:after {
    content: "";
    position: absolute;
    top: -3px;
@@ -809,13 +835,13 @@ body {
    border-right: 3px solid transparent;
    transform: rotate(-30deg);
 }
-.steps-row4 i {
+.steps_row4 i {
    position: absolute;
    width: 15px;
    height: 59px;
    left: 802px;
    top: 251px;
-   font-family: Playfair Display;
+   font-family: "Playfair Display";
    font-style: normal;
    font-weight: normal;
    font-size: 40px;
@@ -825,13 +851,13 @@ body {
    color: #ffffff;
    display: block;
 }
-.steps-row4 p {
+.steps_row4 p {
    position: absolute;
    width: 140px;
    height: 40px;
    left: 780px;
    top: 347px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
@@ -841,7 +867,7 @@ body {
    color: #ffffff;
 }
 /*Fifth circle*/
-.steps-row5 span.dot {
+.steps_row5 span.dot {
    display: block;
    position: absolute;
    width: 66px;
@@ -854,7 +880,7 @@ body {
    text-align: center;
    transform: rotate(45deg);
 }
-.steps-row5 span.dot:before {
+.steps_row5 span.dot:before {
    content: "";
    position: absolute;
    top: -3px;
@@ -868,7 +894,7 @@ body {
    border-bottom: 3px solid #ff9900;
    border-right: 3px solid #ff9900;
 }
-.steps-row5 span.dot:after {
+.steps_row5 span.dot:after {
    content: "";
    position: absolute;
    top: -3px;
@@ -883,13 +909,13 @@ body {
    border-right: 3px solid transparent;
    transform: rotate(30deg);
 }
-.steps-row5 i {
+.steps_row5 i {
    position: absolute;
    width: 15px;
    height: 59px;
    left: 993px;
    top: 251px;
-   font-family: Playfair Display;
+   font-family: "Playfair Display";
    font-style: normal;
    font-weight: normal;
    font-size: 40px;
@@ -899,13 +925,13 @@ body {
    color: #ffffff;
    display: block;
 }
-.steps-row5 p {
+.steps_row5 p {
    position: absolute;
    width: 130px;
    height: 40px;
    left: 967px;
    top: 347px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
@@ -915,7 +941,7 @@ body {
    color: #ffffff;
 }
 /*Sixth circle*/
-.steps-row6 span.dot {
+.steps_row6 span.dot {
    display: block;
    position: absolute;
    width: 66px;
@@ -928,7 +954,7 @@ body {
    text-align: center;
    transform: rotate(45deg);
 }
-.steps-row6 span.dot:before {
+.steps_row6 span.dot:before {
    content: "";
    position: absolute;
    top: -3px;
@@ -942,7 +968,7 @@ body {
    border-bottom: 3px solid #ff9900;
    border-right: 3px solid #ff9900;
 }
-.steps-row6 span.dot:after {
+.steps_row6 span.dot:after {
    content: "";
    position: absolute;
    top: -3px;
@@ -957,13 +983,13 @@ body {
    border-right: 3px solid transparent;
    transform: rotate(90deg);
 }
-.steps-row6 i {
+.steps_row6 i {
    position: absolute;
    width: 15px;
    height: 59px;
    left: 1179px;
    top: 251px;
-   font-family: Playfair Display;
+   font-family: "Playfair Display";
    font-style: normal;
    font-weight: normal;
    font-size: 40px;
@@ -973,13 +999,13 @@ body {
    color: #ffffff;
    display: block;
 }
-.steps-row6 p {
+.steps_row6 p {
    position: absolute;
    width: 130px;
    height: 40px;
    left: 1111px;
    top: 347px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
@@ -990,7 +1016,7 @@ body {
 }
 
 /* steps-line*/
-.steps-line1 {
+.steps_line1 {
    position: absolute;
    width: 124px;
    height: 0px;
@@ -998,7 +1024,7 @@ body {
    top: 285px;
    border: 1px solid #ffffff;
 }
-.steps-line2 {
+.steps_line2 {
    position: absolute;
    width: 126px;
    height: 0px;
@@ -1006,7 +1032,7 @@ body {
    top: 285px;
    border: 1px solid #ffffff;
 }
-.steps-line3 {
+.steps_line3 {
    position: absolute;
    width: 122px;
    height: 0px;
@@ -1014,7 +1040,7 @@ body {
    top: 285px;
    border: 1px solid #ffffff;
 }
-.steps-line4 {
+.steps_line4 {
    position: absolute;
    width: 115px;
    height: 0px;
@@ -1022,7 +1048,7 @@ body {
    top: 285px;
    border: 1px solid #ffffff;
 }
-.steps-line5 {
+.steps_line5 {
    position: absolute;
    width: 117px;
    height: 0px;
@@ -1032,7 +1058,7 @@ body {
 }
 
 /* Portfolio*/
-#portfolio {
+.portfolio {
    position: absolute;
    display: block;
    width: 1440px;
@@ -1044,13 +1070,13 @@ body {
    background-position: center;
    z-index: 2;
 }
-.portfolio-title p {
+.portfolio_container__title p {
    position: absolute;
    left: 628px;
    top: 100px;
    width: 183px;
    height: 25px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
@@ -1061,13 +1087,13 @@ body {
    text-transform: uppercase;
    color: #ff9900;
 }
-.portfolio-title h3 {
+.portfolio_container__title h3 {
    position: absolute;
    left: 566px;
    top: 120px;
    width: 310px;
    height: 70px;
-   font-family: Playfair Display;
+   font-family: "Playfair Display";
    font-style: normal;
    font-weight: normal;
    font-size: 40px;
@@ -1077,7 +1103,7 @@ body {
    letter-spacing: 0.2px;
    color: #000000;
 }
-.portfolio-info i {
+.portfolio_container__info i {
    position: absolute;
    width: 692px;
    height: 606px;
@@ -1086,13 +1112,13 @@ body {
    mix-blend-mode: multiply;
    opacity: 0.3;
 }
-.portfolio-info h5 {
+.portfolio_container__info h5 {
    position: absolute;
    width: 173px;
    height: 33px;
    left: 172px;
    top: 355px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: 600;
    font-size: 24px;
@@ -1101,13 +1127,13 @@ body {
    letter-spacing: 0.2px;
    color: #000000;
 }
-.portfolio-info p {
+.portfolio_container__info p {
    position: absolute;
    width: 504px;
    height: 175px;
    left: 168px;
    top: 412px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
@@ -1116,13 +1142,13 @@ body {
    letter-spacing: 0.2px;
    color: #000000;
 }
-.portfolio-info span {
+.portfolio_container__info span {
    position: absolute;
    width: 142px;
    height: 25px;
    left: 168px;
    top: 618px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: bold;
    font-size: 18px;
@@ -1131,13 +1157,13 @@ body {
    letter-spacing: 0.2px;
    color: #000000;
 }
-.portfolio-info span i {
+.portfolio_container__info span i {
    position: absolute;
    width: 68px;
    height: 28px;
    left: 150px;
    top: 0px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 20px;
@@ -1146,7 +1172,7 @@ body {
    letter-spacing: 0.2px;
    color: #000000;
 }
-.portfolio-info span.portf-botom {
+.portfolio_container__info span.portf_botom {
    position: absolute;
    width: 142px;
    height: 25px;
@@ -1161,13 +1187,13 @@ body {
    letter-spacing: 0.2px;
    color: #000000;
 }
-.portfolio-info span.portf-botom i {
+.portfolio_container__info span.portf_botom i {
    position: absolute;
    width: 68px;
    height: 28px;
    left: 150px;
    top: 0px;
-   font-family: Gilroy;
+   font-family: "Gilroy";
    font-style: normal;
    font-weight: normal;
    font-size: 20px;
@@ -1177,108 +1203,410 @@ body {
    color: #000000;
 }
 /* Porfolio-slider */
-.porfolio-slider {
+.porfolio_slider {
    position: relative;
    width: 652px;
    height: 684px;
    left: 795px;
    top: 229px;
 }
-.porfolio-slider-foto1 {
+.porfolio_slider__foto1 {
    position: absolute;
    width: 102px;
    height: 105px;
    left: 0px;
    top: 0px;
 }
-.porfolio-slider-foto2 {
+.porfolio_slider__foto2 {
    position: absolute;
    width: 102px;
    height: 105px;
    left: 0px;
    top: 107px;
 }
-.porfolio-slider-foto3 {
+.porfolio_slider__foto3 {
    position: absolute;
    width: 102px;
    height: 105px;
    left: 0px;
    top: 214px;
 }
-.porfolio-slider-foto-main {
+.porfolio_slider__foto__main {
    position: absolute;
    width: 845px;
    height: 607px;
    left: 104px;
    top: 0px;
 }
-.porfolio-slider-panel {
+.porfolio_sliderpanel {
+   display: flex;
    position: absolute;
-   display: inline;
    width: 541px;
    height: 94px;
    left: 899px;
    top: 817px;
    background: #ffb800;
+   z-index: 10;
+   justify-content: left;
 }
-.portfolio-dot1 i {
+.porfolio_sliderpanel a i {
    position: relative;
-   font-size: 12px;
+   font-size: 9px;
    left: 119px;
+   top: 42px;
+   width: 30px;
+   color: rgba(255, 255, 255, 0.45);
+   justify-content: space-between;
+}
+.porfolio_sliderpanel a span {
+   position: relative;
+   font-size: 35px;
+   left: 250px;
    top: 35px;
+   width: 60px;
+   color: rgba(255, 255, 255, 0.45);
+   justify-content: space-between;
+}
+.porfolio_sliderpanel a i:hover {
    color: #ffffff;
+   cursor: pointer;
 }
-.portfolio-dot2 i {
-   position: relative;
-   font-size: 9px;
-   left: 158px;
-   top: 33px;
-   color: rgba(255, 255, 255, 0.35);
-}
-.portfolio-dot3 i {
-   position: relative;
-   font-size: 9px;
-   left: 197px;
-   top: 33px;
-   color: rgba(255, 255, 255, 0.35);
-}
-.portfolio-dot4 i {
-   position: relative;
-   font-size: 9px;
-   left: 236px;
-   top: 33px;
-   color: rgba(255, 255, 255, 0.35);
-}
-.portfolio-chevron-left i {
-   position: absolute;
-   font-size: 32px;
-   left: 390px;
-   top: 30px;
+.porfolio_sliderpanel a span:hover {
    color: #ffffff;
-}
-.portfolio-chevron-right i {
-   position: absolute;
-   font-size: 32px;
-   left: 450px;
-   top: 30px;
-   color: #ffffff;
+   cursor: pointer;
 }
 
 /* Testimonials */
-#testimonials {
-   position: relative;
+.testimonials {
+   position: absolute;
    width: 1440px;
    height: 804px;
    left: 0px;
    top: 3210px;
 }
-.testimonials-container {
+.testimonials_container {
    position: absolute;
    width: 766px;
    height: 671px;
    left: 345px;
    top: 0px;
-
+   justify-content: center;
    background: rgba(255, 255, 255, 0.1);
    backdrop-filter: blur(26px);
+}
+.testimonials_container i {
+   position: absolute;
+   width: 283px;
+   height: 185px;
+   left: 560px;
+   top: 249px;
+   color: #ffffff;
+}
+.testimonials_container__title p {
+   position: absolute;
+   left: 311px;
+   top: 70px;
+   width: 150px;
+   height: 30px;
+   color: #ff9900;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 139.4%;
+   /* identical to box height, or 25px */
+   text-align: center;
+   letter-spacing: 9.7px;
+   text-transform: uppercase;
+}
+.testimonials_container__title h3 {
+   position: absolute;
+   left: 125px;
+   top: 108px;
+   width: 500px;
+   height: 50px;
+   font-family: "Playfair Display";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 40px;
+   line-height: 139.4%;
+   /* identical to box height, or 56px */
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #ffffff;
+}
+.testimonials_container__text p {
+   position: absolute;
+   width: 493px;
+   height: 185px;
+   left: 130px;
+   top: 290px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 18px;
+   text-align: center;
+   letter-spacing: 0.01em;
+   color: #ffffff;
+   opacity: 0.7;
+   text-justify: center;
+}
+.testimonials_container__text span {
+   position: absolute;
+   width: 211px;
+   height: 300px;
+   left: 280px;
+   top: 430px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+   /* identical to box height */
+   align-items: center;
+   text-align: center;
+   letter-spacing: -0.015em;
+   color: #ffffff;
+}
+.testimonials_container__slider {
+   display: flex;
+   position: absolute;
+   width: 190px;
+   height: 24px;
+   left: 277px;
+   top: 550px;
+   z-index: 10;
+   justify-content: center;
+}
+
+.testimonials_container__slider a i {
+   position: relative;
+   font-size: 7px;
+   left: 20px;
+   top: 5px;
+   width: 30px;
+   color: rgba(196, 196, 196, 0.45);
+   justify-content: space-between;
+}
+.testimonials_container__slider a span {
+   position: relative;
+   font-size: 35px;
+   left: 10px;
+   top: 0px;
+   width: 100%;
+   color: rgba(196, 196, 196, 0.45);
+   justify-content: space-between;
+}
+.testimonials_container__slider a i:hover {
+   color: #ff9900;
+   cursor: pointer;
+}
+.testimonials_container__slider a span:hover {
+   color: #ff9900;
+   cursor: pointer;
+}
+.contacts_container {
+   position: absolute;
+   width: 1440px;
+   height: 370px;
+   top: 3880px;
+   left: 0px;
+   max-width: 1440px;
+   min-width: 320px;
+   display: flex;
+   justify-content: center;
+   z-index: 99;
+   background-color: #ffb800;
+}
+.contacts_container p.contact_form__title {
+   position: absolute;
+   width: 266px;
+   height: 40px;
+   left: 385px;
+   top: 45px;
+   font-family: "Playfair Display";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 40px;
+   /* identical to box height */
+   color: #ffffff;
+}
+.contacts_container p.contact_form__description {
+   position: absolute;
+   width: 588px;
+   height: 40px;
+   left: 385px;
+   top: 92px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 21px;
+   /* identical to box height */
+   letter-spacing: 0.005em;
+   color: #ffffff;
+}
+.contacts_container input {
+   display: initial;
+   position: absolute;
+   width: 300px;
+   height: 22px;
+   left: 385px;
+   top: 156px;
+   padding: 0px 0px 0px 2px;
+   border-bottom: 0.5px solid #ffffff;
+   border-left: 4px solid #ffb800;
+   border-right: 1px solid #ffb800;
+   border-top: 1px solid #ffb800;
+   color: #ffffff;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   letter-spacing: 0.07em;
+   background-color: #ffb800;
+}
+.contacts_container input.contact_form__input_name {
+   left: 385px;
+   top: 156px;
+   width: 294px;
+}
+.contacts_container input.contact_form__input_email {
+   left: 798px;
+   top: 156px;
+   width: 294px;
+}
+.contacts_container input.contact_form__input_text {
+   left: 385px;
+   top: 246px;
+   width: 705px;
+}
+.contacts_container input.contact_form__input_name:hover {
+   background-color: #ffffff;
+   border: 3px solid #ffb800;
+   color: #1b1402;
+}
+.contacts_container input.contact_form__input_email:hover {
+   background-color: #ffffff;
+   border: 3px solid #ffb800;
+   color: #1b1402;
+}
+.contacts_container input.contact_form__input_text:hover {
+   background-color: #ffffff;
+   border: 3px solid #ffb800;
+   color: #1b1402;
+}
+.contacts_container .contact-form__button {
+   position: absolute;
+   width: 128px;
+   height: 42px;
+   left: 385px;
+   top: 298px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 19px;
+   display: border-box;
+   border: 4px solid #ffb800;
+   color: #ffb800;
+   justify-content: center;
+   align-items: center;
+}
+.contacts_container .contact-form__button:hover {
+   border: 4px solid #ffffff;
+   color: #ffb800;
+   cursor: pointer;
+}
+
+/* Footer */
+.footer {
+   display: flex;
+   position: absolute;
+   width: 1440px;
+   height: 403px;
+   left: 0px;
+   top: 4250px;
+   background: #000000;
+}
+.footer .header_logo {
+   position: absolute;
+   left: 82px;
+   top: 90px;
+}
+.footer_text {
+   position: absolute;
+   width: 250px;
+   height: 75px;
+   left: 164px;
+   top: 210px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 25px;
+   letter-spacing: -0.7px;
+   color: #ffffff;
+}
+.footer .nav_links a {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   position: relative;
+   width: 100px;
+   height: 40px;
+   left: 622px;
+   top: 165px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 19px;
+   /* identical to box height */
+   color: #ffffff;
+}
+.footer .footer_add i {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   position: relative;
+   width: 130px;
+   height: 65px;
+   left: 922px;
+   top: 165px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 19px;
+   /* identical to box height */
+   color: #ffffff;
+}
+.footer .footer_social a {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   position: relative;
+   width: 130px;
+   height: 30px;
+   left: 1100px;
+   top: 164px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 19px;
+   /* identical to box height */
+   color: rgba(255, 255, 255, 0.2);
+}
+.footer .instagram:hover {
+   color: #d6249f;
+}
+.footer .facebook:hover {
+   color: #3b5998;
+}
+.footer .linkedin:hover {
+   color: #0e6d99;
 }

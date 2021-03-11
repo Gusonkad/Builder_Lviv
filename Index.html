@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8" />
+   <meta name="description" content="" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Builder_Lviv</title>
    <link rel="stylesheet" href="css/normalize.css" />
    <link rel="stylesheet" href="css/style.css">
@@ -18,44 +18,47 @@
 </head>
 
 <body>
-   <div id="main" class="main-conteiner">
+   <div id="main" class="main_conteiner">
+      <!-- header contacts and social -->
       <header class="header">
-
-         <!-- Contacts and social -->
-         <div class="contacts-header">
+         <div class="header_contacts">
             <ul>
-               <li><a href="+380674673767" class="phone1">+38 (067) 467-37-67</a></li>
-               <li><a href="+380674673767" class="phone2">+38 (067) 467-37-67</a></li>
+               <li><a href="#slider" class="header_contacts__goback"><i class="fa fa-arrow-circle-o-up"
+                        aria-hidden="true"></i>На головну</a></li>
+               <li><a href="+380674673767" class="header_contacts__phone1">+38 (067) 467-37-67</a></li>
+               <li><a href="+380674673767" class="header_contacts__phone2">+38 (067) 467-37-67</a></li>
             </ul>
-            <div class="social">
+            <div class="header_social">
                <ul>
-                  <li class="social-linkedin"><a href="#"><img src="img/linkedin.svg" alt="Linkedin.svg"></img></a></li>
-                  <li class="social-facebook"><a href="#"><img src="img/Facebook.svg" alt="Facebook.svg"></img></a></li>
-                  <li class="social-instagram"><a href="#"><img src="img/instagram.svg" alt="instagram.svg"></img></a>
+                  <li class="header_social__linkedin"><a href="#"><img src="img/linkedin.svg"
+                           alt="Linkedin.svg"></img></a></li>
+                  <li class="header_social__facebook"><a href="#"><img src="img/Facebook.svg"
+                           alt="Facebook.svg"></img></a></li>
+                  <li class="header_social__instagram"><a href="#"><img src="img/instagram.svg"
+                           alt="instagram.svg"></img></a>
                   </li>
                </ul>
             </div>
          </div>
-
          <!-- Logo -->
-         <div class="logo">
+         <div class="header_logo">
             <h1>
                <a href="#slider">logo</a>
             </h1>
          </div>
          <!-- Nav menu -->
-         <div id="top_nav" class="mainheader">
+         <div class="header_nav">
             <ul>
-               <li><a href="#about" class="header-about">Про нас</a></li>
-               <li><a href="#testimonials" class="header-testimonials">Відгуки</a></li>
-               <li><a href="#work-steps" class="header-steps">Ціни</a></li>
-               <li><a href="#portfolio" class="header-portfolio" class="active">Наші роботи</a></li>
-               <li><a href="#contacts" class="header-contacts">Контакти</a></li>
+               <li><a href="#about" class="header_nav__about">Про нас</a></li>
+               <li><a href="#testimonials" class="header_nav__testimonials">Відгуки</a></li>
+               <li><a href="#work-steps" class="header_nav__steps">Ціни</a></li>
+               <li><a href="#portfolio" class="header_nav__portfolio" class="active">Наші роботи</a></li>
+               <li><a href="#contacts" class="header_nav__contacts">Контакти</a></li>
             </ul>
          </div>
          <!-- Button1 -->
          <div>
-            <a href="#" class="button">Замовити дзвінок</a>
+            <a href="#contacts" class="header_button">Замовити дзвінок</a>
          </div>
       </header>
 
@@ -63,104 +66,111 @@
       <section id="slider" class="slider"
          style="background-image: url('img/electrician-installer-with-tool-his-hands-working-with-cable-construction-site\ 1.png')"
          alt="slider.png">
-         <div class="slider-container">
-            <div class="text">
-               <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet
-                  tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem,
-                  at rhoncus nulla condimentum vitae. Cras vitae aliquet quam.</p>
-               <!-- Button2 -->
-               <div>
-                  <a href="#" class="button2">Залишити заявку</a>
-               </div>
+         <div class="slider_container">
+            <h3 class="slider_container__head1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <p class="slider_container__head2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+               condimentum eros arcu, at aliquet
+               tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem,
+               at rhoncus nulla condimentum vitae. Cras vitae aliquet quam.
+            </p>
+            <!-- Button2 -->
+            <div>
+               <a href="#contacts" class="slider_container__button2">Залишити заявку</a>
             </div>
-            <div class="slider-bottom">
+
+            <!-- Slider bottom -->
+            <div class="slider_bottom">
                <p class="bottom1">Фіксований кошторис</p>
-               <span class="bottom-fon1"><img src="img/slidefon1.svg" alt="slidefon1.svg"></img></span>
+               <span class="bottom_fon1"><img src="img/slidefon1.svg" alt="slidefon1.svg"></img></span>
                <p class="bottom2">Працюємо без авансів</p>
-               <span class="bottom-fon2"><img src="img/slidefon2.svg" alt="slidefon2.svg"></img></span>
+               <span class="bottom_fon2"><img src="img/slidefon2.svg" alt="slidefon2.svg"></img></span>
                <p class="bottom3">Щотижнева звітність робочого процесу</p>
-               <span class="bottom-fon3"><img src="img/slidefon3.svg" alt="slidefon3.svg"></img></span>
+               <span class="bottom_fon3"><img src="img/slidefon3.svg" alt="slidefon3.svg"></img></span>
                <p class="bottom4">Здача роботи у зазначені терміни</p>
-               <span class="bottom-fon4"><img src="img/slidefon4.svg" alt="slidefon4.svg"></img></span>
+               <span class="bottom_fon4"><img src="img/slidefon4.svg" alt="slidefon4.svg"></img></span>
                <p class="bottom5">Гарантія на роботи</p>
-               <span class="bottom-fon5"><img src="img/slidefon5.svg" alt="slidefon5.svg"></img></span>
+               <span class="bottom_fon5"><img src="img/slidefon5.svg" alt="slidefon5.svg"></img></span>
             </div>
          </div>
       </section>
 
       <!-- About -->
       <section id="about" class="about" style="background-image:url('img/MaskGroup.png')" alt=" about.png">
-         <div class="about-container">
-            <div class="banner-about">
-               <p>Років досвіду</p>
-               <span>10+</span>
+         <div class="about_container">
+            <div class="about_banner">
+               <p class="about_banner__text1">Років досвіду</p>
+               <span class="about_banner__text2">10+</span>
             </div>
-            <div class="about-info">
-               <span>Про нас</span>
-               <h3>Хто ми такі?</h3>
-               <a>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet
-                     tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo
-                     lorem,
-                     at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et
-                     magnis
-                     dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. Proin consequat mauris
-                     augue,
-                     id suscipit risus mattis non. Sed a vulputate diam.</p>
-                  <p class="about-rubric"> Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed sem egestas
-                     hendrerit at velquam. Vestibulum maximus velit dui.</p>
-               </a>
-               <i><img src="img/two-bedroom-x2--plan 2.png" alt="img-bedroom.png"></img></i>
+            <div class="about_info">
+               <span class="about_info__head1">Про нас</span>
+               <h3 class="about_info__head2">Хто ми такі?</h3>
+               <div>
+                  <a class="about_rubric">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        condimentum eros arcu, at aliquet
+                        tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo
+                        lorem,
+                        at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et
+                        magnis
+                        dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. Proin consequat mauris
+                        augue,
+                        id suscipit risus mattis non. Sed a vulputate diam.</p>
+                     <p class="about_rubric__botom"> Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed
+                        sem egestas
+                        hendrerit at velquam. Vestibulum maximus velit dui.</p>
+                  </a>
+               </div>
+
+               <div class="about_img"><i><img src="img/two-bedroom-x2--plan 2.png" alt="img-bedroom.png"></img></i>
+               </div>
+
             </div>
          </div>
       </section>
 
       <!-- Work steps -->
-      <section id="work-steps" class="work-steps">
-         <div class="work-steps-container">
-            <div class="steps-title">
-               <p>Eтапи роботи</p>
-               <h3>Як ми працюємо?</h3>
-            </div>
+      <section id="work_steps" class="work_steps">
+         <div class="work_steps_container">
+            <p class="work_steps_container title1">Eтапи роботи</p>
+            <h3 class="work_steps_container title2">Як ми працюємо?</h3>
 
             <!-- Work steps cirkles -->
-            <div class="steps-row1">
+            <div class="steps_row1">
                <div>
                   <span class="dot"></span>
                   <i>1</i>
                   <p>Виїзд майстра на обєкт для замірів</p>
                </div>
             </div>
-            <div class="steps-row2">
+            <div class="steps_row2">
                <div>
                   <span class="dot"></span>
                   <i>2</i>
                   <p>Складання кошторису згідно попередніх домовлень</p>
                </div>
             </div>
-            <div class="steps-row3">
+            <div class="steps_row3">
                <div>
                   <span class="dot"></span>
                   <i>3</i>
                   <p>Підписання договору</p>
                </div>
             </div>
-            <div class="steps-row4">
+            <div class="steps_row4">
                <div>
                   <span class="dot"></span>
                   <i>4</i>
                   <p>Закупівля матеріалу</p>
                </div>
             </div>
-            <div class="steps-row5">
+            <div class="steps_row5">
                <div>
                   <span class="dot"></span>
                   <i>5</i>
                   <p>Вчасна здача проекту</p>
                </div>
             </div>
-            <div class="steps-row6">
+            <div class="steps_row6">
                <div>
                   <span class="dot"></span>
                   <i>6</i>
@@ -168,19 +178,19 @@
                </div>
             </div>
             <!-- Work steps lines-->
-            <div class="steps-line1">
+            <div class="steps_line1">
                <hr>
             </div>
-            <div class="steps-line2">
+            <div class="steps_line2">
                <hr>
             </div>
-            <div class="steps-line3">
+            <div class="steps_line3">
                <hr>
             </div>
-            <div class="steps-line4">
+            <div class="steps_line4">
                <hr>
             </div>
-            <div class="steps-line5">
+            <div class="steps_line5">
                <hr>
             </div>
          </div>
@@ -188,12 +198,12 @@
 
       <!-- Portfolio-->
       <section id="portfolio" class="portfolio">
-         <div class="portfolio-container">
-            <div class="portfolio-title">
+         <div class="portfolio_container">
+            <div class="portfolio_container__title">
                <p>портфоліо</p>
                <h3>Наші роботи</h3>
             </div>
-            <div class="portfolio-info">
+            <div class="portfolio_container__info">
                <a>
                   <h5>Назва проекта</h5>
                   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet
@@ -201,46 +211,124 @@
                      lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus
                      et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. </p>
                   <span>Термін ремонта: <i>21 день</i> </span>
-                  <span class="portf-botom">Площа:<i>81 м2</i> </span>
+                  <span class="portf_botom">Площа:<i>81 м2</i> </span>
                </a>
                <i><img src="img/two-bedroom-x2--plan 2.png" alt="img-bedroom.png"></img></i>
             </div>
-            <div class="porfolio-slider">
-               <div class="porfolio-slider-foto1">
+            <div class="porfolio_slider">
+               <div class="porfolio_slider__foto1">
                   <i><img src="img/IMG-852079bf847a9ff606b6f9a0092acda4-V 1.png" alt="porfolio.png"></img></i>
                </div>
-               <div class="porfolio-slider-foto2">
+               <div class="porfolio_slider__foto2">
                   <i><img src="img/IMG-d05443d3f4428e6bf0ce8ca56ccde1bb-V 1.png" alt="porfolio.png"></img></i>
                </div>
-               <div class="porfolio-slider-foto3">
+               <div class="porfolio_slider__foto3">
                   <i><img src="img/IMG-5df07b3763eafd38c2b6a39e8931f59e-V 1.png" alt="porfolio.png"></img></i>
                </div>
-               <div class="porfolio-slider-foto-main">
+               <div class="porfolio_slider__foto__main">
                   <i><img src="img/IMG-519014695cc4d76f64d23f95fcac3dc2-V 1.png " alt="porfolio.png"></img></i>
                </div>
             </div>
-            <div class="porfolio-slider-panel">
-               <a class="portfolio-dot1"><i class="fas fa-circle"></i></a>
-               <a class="portfolio-dot2"><i class="fas fa-circle"></i></a>
-               <a class="portfolio-dot3"><i class="fas fa-circle"></i></a>
-               <a class="portfolio-dot4"><i class="fas fa-circle"></i></a>
-               <!-- Portfolio chevrons-->
-               <a class="portfolio-chevron-left"><i class="fas fa-chevron-left"></i></a>
-               <a class="portfolio-chevron-right"><i class="fas fa-chevron-right"></i></a>
+            <div class="porfolio_sliderpanel">
+
+               <a><i class="fas fa-circle"></i></a>
+               <a><i class="fas fa-circle"></i></a>
+               <a><i class="fas fa-circle"></i></a>
+               <a><i class="fas fa-circle"></i></a>
+               <a><span class="fas fa-chevron-left"></span></a>
+               <a><span class="fas fa-chevron-right"></span></a>
             </div>
          </div>
       </section>
-
+      <!-- Section testimonials-->
       <section id="testimonials" class="testimonials"
          style="background-image:url('img/handyman-uses-jackhammer-for-installation-professional-worker-on-the-construction-site-the-concept-of-electrician-and-handyman\ 1.png')"
          alt=" testimonials.png">
-         <div class="testimonials-container">
+         <div class="testimonials_container">
+            <i><img src="img/quotes.png" alt="img.png"></img></i>
+            <div class="testimonials_container__title">
+               <p>Відгуки</p>
+               <h3>Що про нас говорять наші клієнти</h3>
+            </div>
+            <div class="testimonials_container__text">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut
+                  nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim
+                  maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at
+                  nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel.
+                  Integer sit amet lectus non enim maximus varius sed non arcu. </p>
+               <span>Елена Филонова, Львів</span>
+            </div>
+            <!-- Testimonials slider-->
+            <div class="testimonials_container__slider">
+               <a><span class="fas fa-chevron-left"></span></a>
+               <a><i class="fas fa-circle"></i></a>
+               <a><i class="fas fa-circle"></i></a>
+               <a><i class="fas fa-circle"></i></a>
+               <a><i class="fas fa-circle"></i></a>
+               <a><span class="fas fa-chevron-right"></span></a>
+            </div>
+         </div>
+      </section>
+      <!-- Contacts form-->
+      <section id="contacts" class="contacts">
+         <div class="contacts_container">
+            <form class="contact_form" id="contact_form_1" method="POST" enctype="multipart/form-data">
+               <p class="contact_form__title">Зв'яжіться з нами</p>
+               <p class="contact_form__description">Залиште номер телефону, і ми зв'яжемося з вами на протязі 5 хвилин.
+               </p>
+               <div class="contact_form__input-wrapper">
+                  <input name="name" type="text" class="contact_form__input contact_form__input_name"
+                     placeholder="ім'я">
+                  <div class="contact_form__error contact_form__error_name"></div>
+               </div>
 
+               <div class="contact_form__input-wrapper">
+                  <input name="email" type="email" class="contact_form__input contact_form__input_email"
+                     placeholder="E-mail">
+                  <div class="contact_form__error contact_form__error_email"></div>
+               </div>
+
+               <div class="contact_form__input-wrapper">
+                  <input name="text" type="text" class="contact_form__input contact_form__input_text"
+                     placeholder="Ваше повідомлення..">
+                  <div class="contact_form__error contact_form__error_text"></div>
+               </div>
+
+               <button class="contact-form__button" type="submit"> Надіслати </button>
+            </form>
+         </div>
+      </section>
+      <!-- Footer-->
+      <section id="footer">
+         <div class="footer">
+            <div class="header_logo">
+               <h1>
+                  <a href="#slider">logo</a>
+               </h1>
+            </div>
+            <div class="footer_text">
+               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               </p>
+            </div>
+            <div class="nav_links">
+               <a href="#about" class="nav_links__about">Про нас</a>
+               <a href="#portfolio" class="nav_links__portfolio">Наші роботи</a>
+               <a href="#work-steps" class="nav_links__steps">етапи роботи</a>
+            </div>
+            <div class="footer_add">
+               <i class="nav_links__about">УКРАЇНА, М.ЛЬВІВ, ВУЛ. Зелена 230</i>
+               <i class="nav_links__steps">(097)857-70-47</i>
+            </div>
+            <div class="footer_social">
+               <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+               <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+               <a class="linkedin href=" #"><i class="fa fa-linkedin"></i></a>
+               </ul>
+            </div>
          </div>
       </section>
 
       <script src="jQueryNav/Nav.js"></script>
-
    </div>
 </body>
 
